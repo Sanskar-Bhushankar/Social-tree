@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin, BookOpen, Instagram, Code2, FileCheck } from 'lucide-react';
+import { Github, Twitter, Linkedin, BookOpen, Instagram, Code2, FileCheck, FileIcon } from 'lucide-react';
 import type { SocialLinkProps } from '../types/social';
 
 export const socialLinks: Omit<SocialLinkProps, 'onMouseEnter' | 'onMouseLeave'>[] = [
@@ -6,19 +6,19 @@ export const socialLinks: Omit<SocialLinkProps, 'onMouseEnter' | 'onMouseLeave'>
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/sanskar-bhushankar-6b1a49244/',
     icon: Linkedin,
-    description: 'Connect with me professionally'
+    description: 'Connect with me'
   },
   {
     name: 'Digital Garden',
     url: 'https://sanskar-bhushankar.github.io/Digital-garden/',
     icon: BookOpen,
-    description: 'Explore my learning notes and articles'
+    description: 'My learning notes and Blogs'
   },
   {
     name: 'Twitter',
     url: 'https://x.com/sanskar2804',
     icon: Twitter,
-    description: 'Follow me for tech insights and updates'
+    description: 'My LearnInPublic Social'
   },
   {
     name: 'Instagram',
@@ -37,6 +37,24 @@ export const socialLinks: Omit<SocialLinkProps, 'onMouseEnter' | 'onMouseLeave'>
     url: 'https://drive.google.com/drive/folders/certifications',
     icon: FileCheck,
     description: 'View my technical certifications'
-  }
+  },
+  {
+    name: 'Github',
+    url: 'https://github.com/Sanskar-Bhushankar',
+    icon: Github,
+    description: 'checkout my repositories'
+  },
+  {
+    name: 'Resume-DataAnalysis',
+    url: 'https://drive.google.com/file/d/1pThVfRxZrMyxLt8FM83c7DHWbRIjDF-R/view?usp=sharing',
+    icon: FileIcon,
+    description: 'checkout my repositories'
+  },
+  {
+    name: 'Resume-WebDev',
+    url: 'https://drive.google.com/file/d/1pThVfRxZrMyxLt8FM83c7DHWbRIjDF-R/view?usp=sharing',
+    icon: FileIcon,
+    description: 'checkout my repositories'
+  },
 
 ];

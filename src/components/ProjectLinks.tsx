@@ -1,23 +1,23 @@
 import React from 'react';
-import { Code, Box, Cpu } from 'lucide-react';
+import { Code, Box, Cpu, RailSymbol, Bus, FolderArchive, CameraIcon, Camera } from 'lucide-react';
 
 const projects = [
   {
     name: 'Screenshot-valut-chrome-extension',
     description: 'A Chrome extension for capturing, organizing, and managing screenshots with drag-and-drop functionality and instant actions.',
     url: 'https://github.com/Sanskar-Bhushankar/Screenshot-Vault-Extension',
-    icon: Cpu
+    icon: Camera
   },
   {
-    name: 'React Component Library',
-    description: 'A collection of reusable React components',
+    name: 'Train Seat Booking React-DSA',
+    description: 'Custom Seat booking for eldery passengers',
     url: 'https://github.com/johndeveloper/react-components',
-    icon: Code
+    icon: Bus
   },
   {
-    name: 'Developer Tools',
-    description: 'CLI tools for developers',
-    url: 'https://github.com/johndeveloper/dev-tools',
+    name: 'Social-Tree',
+    description: 'Personal linktree with tech-finish',
+    url: 'https://social-tree-sanskar.netlify.app/',
     icon: Box
   }
 ];

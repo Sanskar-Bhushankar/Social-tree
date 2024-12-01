@@ -1,11 +1,12 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
+import profileImage from '../images/image1.jpeg';
 
 export default function Profile() {
   return (
     <div className="flex flex-col items-start space-y-4">
       <img
-        src="/src/images/image1.jpeg"
+        src={profileImage}
         alt="Developer Profile"
         className="w-32 h-32 rounded-full object-cover shadow-lg"
       />

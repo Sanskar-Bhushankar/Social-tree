@@ -1,7 +1,21 @@
 import React from 'react';
-import { Code, Box, Cpu, RailSymbol, Bus, FolderArchive, CameraIcon, Camera } from 'lucide-react';
+import { Code, Box, Camera, Bus } from 'lucide-react';
+import treeImage from '../images/tree.png';
 
-const projects = [
+interface ProjectImage {
+  src: string;
+  alt: string;
+}
+
+interface Project {
+  name: string;
+  description: string;
+  url: string;
+  icon: React.ElementType;
+  image?: ProjectImage;
+}
+
+const projects: Project[] = [
   {
     name: 'Screenshot-valut-chrome-extension',
     description: 'A Chrome extension for capturing, organizing, and managing screenshots with drag-and-drop functionality and instant actions.',
@@ -24,26 +38,42 @@ const projects = [
 
 export default function ProjectLinks() {
   return (
-    <div className="mb-12">
-      <h2 className="text-2xl font-semibold mb-6">Featured Projects</h2>
+    <div>
+      <h2 className="text-4xl font-bold text-center mb-12 text-gray-100">Featured Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project) => (
-          <a
-            key={project.name}
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all hover:translate-y-[-2px]"
-          >
-            <div className="flex items-start space-x-4">
-              <project.icon className="text-blue-600 mt-1" size={24} />
-              <div>
-                <h3 className="font-medium text-gray-800 mb-2">{project.name}</h3>
-                <p className="text-sm text-gray-600">{project.description}</p>
+        {projects.map((project) => {
+          const Icon = project.icon;
+          return (
+            <a
+              key={project.name}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:bg-gray-700 border border-gray-700"
+            >
+              <div className="flex flex-col space-y-4">
+                <div className="flex items-start space-x-4">
+                  <div className="p-3 bg-gray-700 rounded-lg text-green-400 flex-shrink-0">
+                    <Icon className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-100">{project.name}</h3>
+                    <p className="text-sm text-gray-400 mt-2">{project.description}</p>
+                  </div>
+                </div>
+                {project.image && (
+                  <div className="mt-4">
+                    <img
+                      src={project.image.src}
+                      alt={project.image.alt}
+                      className="w-full h-32 object-contain rounded-lg"
+                    />
+                  </div>
+                )}
               </div>
-            </div>
-          </a>
-        ))}
+            </a>
+          );
+        })}
       </div>
     </div>
   );

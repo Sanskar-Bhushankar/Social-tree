@@ -34,7 +34,7 @@ export const socialLinks: Omit<SocialLinkProps, 'onMouseEnter' | 'onMouseLeave'>
   },
   {
     name: 'Certifications',
-    url: 'https://drive.google.com/drive/folders/certifications',
+    url: 'https://drive.google.com/drive/folders/1kjpPX8B4NERtbLFairEnmxWpCfwNoR7S?usp=sharing',
     icon: FileCheck,
     description: 'View my technical certifications'
   },

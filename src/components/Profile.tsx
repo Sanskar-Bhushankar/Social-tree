@@ -12,7 +12,7 @@ export default function Profile() {
       />
       <h1 className="text-3xl font-bold text-gray-100">Sanskar Bhushankar</h1>
       <p className="text-gray-300 max-w-md">
-        I am a MERN developer and data scientist, currently pursuing an MSc in Data Science. I am learning AWS and actively working on open source projects, contributing to the community, and sharing knowledge.
+        I am a MERN developer and data scientist, currently pursuing MSc in Data Science. I am learning AWS and actively working on open source projects, contributing to the community, and sharing knowledge.
       </p>
       <div className="flex flex-col space-y-2">
         <a 

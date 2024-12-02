@@ -40,20 +40,23 @@ export default function TweetScroller() {
   const extendedTweets = [...tweets, ...tweets, ...tweets, ...tweets];
 
   return (
-    <div className="w-full mt-12">
-      <h2 className="text-2xl font-semibold mb-6">Latest Updates</h2>
+    <div className="w-full">
+      <h2 className="text-2xl font-semibold mb-3 text-gray-100 pl-2">Latest Updates</h2>
       <div className="relative">
         <div 
           ref={scrollRef}
           className="overflow-hidden"
-          style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}
+          style={{ 
+            maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+            WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'
+          }}
         >
           <div 
             ref={containerRef}
-            className="inline-flex gap-6 py-4"
+            className="inline-flex gap-1"
           >
             {extendedTweets.map((tweet, index) => (
-              <Tweet key={`${tweet.id}-${index}`} {...tweet} />
+              <Tweet key={`${tweet.id}-${index}`} id={tweet.id} />
             ))}
           </div>
         </div>

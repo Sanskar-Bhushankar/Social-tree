@@ -10,7 +10,7 @@ export const socialLinks: Omit<SocialLinkProps, 'onMouseEnter' | 'onMouseLeave'>
   },
   {
     name: 'Digital Garden',
-    url: 'https://sanskar-bhushankar.github.io/Digital-garden/',
+    url: 'https://digital-garden-tdes.vercel.app/',
     icon: BookOpen,
     description: 'My learning notes and Blogs'
   },

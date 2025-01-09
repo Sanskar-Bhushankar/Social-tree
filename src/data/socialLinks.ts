@@ -9,10 +9,10 @@ export const socialLinks: Omit<SocialLinkProps, 'onMouseEnter' | 'onMouseLeave'>
     description: 'Connect with me'
   },
   {
-    name: 'Digital Garden',
+    name: 'DigitalGarden',
     url: 'https://digital-garden-tdes.vercel.app/',
     icon: BookOpen,
-    description: 'My learning notes and Blogs'
+    description: 'My learning notes-blogs'
   },
   {
     name: 'Twitter',
@@ -24,7 +24,7 @@ export const socialLinks: Omit<SocialLinkProps, 'onMouseEnter' | 'onMouseLeave'>
     name: 'Instagram',
     url: 'https://www.instagram.com/sanskar_rr/',
     icon: Instagram,
-    description: 'Not so usefull but still interesting'
+    description: 'Not so usefull filling spaces'
   },
   {
     name: 'LeetCode',
@@ -36,7 +36,7 @@ export const socialLinks: Omit<SocialLinkProps, 'onMouseEnter' | 'onMouseLeave'>
     name: 'Certifications',
     url: 'https://drive.google.com/drive/folders/1kjpPX8B4NERtbLFairEnmxWpCfwNoR7S?usp=sharing',
     icon: FileCheck,
-    description: 'View my technical certifications'
+    description: 'Technical certifications'
   },
   {
     name: 'Github',
@@ -46,15 +46,15 @@ export const socialLinks: Omit<SocialLinkProps, 'onMouseEnter' | 'onMouseLeave'>
   },
   {
     name: 'Resume-DataAnalysis',
-    url: 'https://drive.google.com/file/d/1pThVfRxZrMyxLt8FM83c7DHWbRIjDF-R/view?usp=sharing',
+    url: 'https://drive.google.com/file/d/1-8gmL9_eREhyjWSlmc2sfYckj38xPPD2/view?usp=sharing',
     icon: FileIcon,
-    description: 'checkout my repositories'
+    description: 'checkout my CV'
   },
   {
-    name: 'Resume-WebDev',
-    url: 'https://drive.google.com/file/d/1pThVfRxZrMyxLt8FM83c7DHWbRIjDF-R/view?usp=sharing',
+    name: 'Resume WebDev/Cloud',
+    url: 'https://drive.google.com/file/d/1JibnOF-5y2qaeOEfEu6YQ11jcFuUfpMM/view?usp=sharing',
     icon: FileIcon,
-    description: 'checkout my repositories'
+    description: 'checkout my CV'
   },
 
 ];

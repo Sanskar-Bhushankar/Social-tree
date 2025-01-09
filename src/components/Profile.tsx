@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, MapPin } from 'lucide-react';
-import profileImage from '../images/image1.jpeg';
+import profileImage from '../images/image1.jpg';
 
 export default function Profile() {
   return (

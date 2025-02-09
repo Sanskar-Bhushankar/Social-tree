@@ -6,6 +6,7 @@ import TweetScroller from './components/TweetScroller';
 import Achievements from './components/Achievements';
 import TechStack from './components/TechStack';
 import YouTubeVideos from './components/YouTubeVideos';
+import DigitalBadges from './components/DigitalBadges';
 import treeImage from './images/tree.png';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             </div>
           </div>
           <ProjectLinks />
+          <DigitalBadges />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <Achievements />
             <div className="space-y-4">

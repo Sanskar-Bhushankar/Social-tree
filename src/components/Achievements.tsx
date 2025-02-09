@@ -19,7 +19,7 @@ const AchievementSection: React.FC<AchievementSectionProps> = ({ icon, title, ch
 
 export default function Achievements() {
   return (
-    <div className="w-full bg-soft-darker rounded-lg p-4 border border-soft-gray-700">
+    <div className=" mt-8 w-full bg-soft-darker rounded-lg p-4 border border-soft-gray-700">
       <div className="flex items-center space-x-2 mb-4">
         <Trophy className="w-5 h-5 text-[#4ade80]" />
         <h2 className="text-lg font-bold text-soft-gray-300">Growth of 2024</h2>

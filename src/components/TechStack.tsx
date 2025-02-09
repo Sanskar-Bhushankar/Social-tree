@@ -88,7 +88,7 @@ export default function TechStack() {
   ];
 
   return (
-    <div className="w-full bg-[#111111] rounded-lg p-4 border border-[#222222]">
+    <div className=" mt-8 w-full bg-[#111111] rounded-lg p-4 border border-[#222222]">
       <div className="flex items-center space-x-2 mb-4">
         <Laptop className="w-4 h-4 text-[#4ade80]" />
         <h2 className="text-lg font-bold text-gray-100">Tech Stack</h2>

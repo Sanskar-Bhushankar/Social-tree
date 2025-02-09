@@ -10,11 +10,11 @@ import treeImage from './images/tree.png';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black text-gray-100">
+    <div className="min-h-screen bg-soft-black text-soft-gray-300">
       <div className="max-w-[1080px] mx-auto px-4 py-6">
         <div className="flex items-center justify-center mb-6">
           <img src={treeImage} alt="Social Tree Logo" className="w-10 h-10 mr-3" />
-          <h1 className="text-3xl font-bold text-center text-gray-100">Social Tree</h1>
+          <h1 className="text-3xl font-bold text-center text-soft-gray-300">Social Tree</h1>
         </div>
         <div className="space-y-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">

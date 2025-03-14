@@ -11,6 +11,12 @@ interface Badge {
 // Featured badges at the top
 const featuredBadges: Badge[] = [
   {
+    imageUrl: "https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+    title: "AWS Certified Cloud Practitioner",
+    date: "February 27, 2025",
+    link: "https://www.credly.com/badges/3053c78e-1c1b-45e4-ba51-c642e479f498/public_url"
+  },
+  {
     imageUrl: "https://images.credly.com/images/44e2c252-5d19-4574-9646-005f7225bf53/image.png",
     title: "AWS re/Start Graduate",
     date: "January 20, 2025",
@@ -104,7 +110,7 @@ export default function DigitalBadges() {
         </div>
 
         {/* Featured Badges */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10 max-w-3xl mx-auto">
           {featuredBadges.map((badge, index) => (
             <a
               key={index}
